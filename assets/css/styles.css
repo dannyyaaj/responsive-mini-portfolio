@@ -84,10 +84,64 @@ img {
 .container {
   max-width: var(--medium-screen);
   margin-left: 1.5rem;
-  margin-right: 15rem;
+  margin-right: 1.5rem;
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/* profile */
+.profile {
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.profile__container {
+  row-gap: 2rem;
+}
+
+.profile__data {
+  display: grid;
+  text-align: center;
+}
+
+.profile__image-container {
+  width: 100px;
+  height: 100px;
+  /* background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  ); */
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.profile__image-container img {
+  height: 100%;
+}
+
+.profile__border {
+  border: 3.5px solid navy;
+  justify-self: center;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* social icons */
+
+.profile__social {
+  display: flex;
+  padding: 0;
+}
+
+.profile__social-item {
+  margin: 0 0.5em;
 }
