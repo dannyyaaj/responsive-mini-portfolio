@@ -4,14 +4,16 @@
 :root {
   --body-font: "Poppins", sans-serif;
 
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 600;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
 
   --text-color: #01161e;
   --title-color: #01161e;
   --primary-color: #eef4ed;
   --secondary-color: #8dd5ff;
+  --accent-color: #9f95ad;
+  --red-color: #d0202a;
 
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -24,17 +26,6 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 
   --medium-screen: 968px;
-}
-
-@media screen and (min-width: var(--medium-screen)) {
-  :root {
-    --h1-font-size: 2rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
 }
 
 /* Base styles */
@@ -51,6 +42,11 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -135,13 +131,59 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.profile__intro {
+  font-size: var(--h1-font-size);
+}
+
+.profile__profession {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-500);
+}
+
 /* social icons */
 
 .profile__social {
   display: flex;
   padding: 0;
+  justify-content: center;
+  column-gap: 0.75rem;
 }
 
-.profile__social-item {
-  margin: 0 0.5em;
+.profile__social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: 0.3s;
+}
+
+.profile__social-link:hover {
+  color: var(--accent-color);
+}
+
+.profile__info {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 2.5rem;
+  text-align: center;
+}
+
+.profile__info-description {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-weight-500);
+}
+
+/* media queries */
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
 }
