@@ -13,6 +13,7 @@
   --primary-color: #eef4ed;
   --secondary-color: #8dd5ff;
   --accent-color: #9f95ad;
+  --purple-color: #433765;
   --red-color: #d0202a;
 
   --h1-font-size: 1.5rem;
@@ -106,11 +107,6 @@ img {
 .profile__image-container {
   width: 100px;
   height: 100px;
-  /* background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  ); */
   border-radius: 50%;
   display: flex;
   overflow: hidden;
@@ -121,7 +117,7 @@ img {
 }
 
 .profile__border {
-  border: 3.5px solid navy;
+  border: 3.5px solid var(--accent-color);
   justify-self: center;
   width: 115px;
   height: 115px;
