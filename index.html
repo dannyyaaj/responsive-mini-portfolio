@@ -44,25 +44,10 @@
           </ul>
         </div>
 
-        <div class="profile__info grid">
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">5</h3>
-            <p class="profile__info-description">
-              Years of <br /> work
-            </p>
-          </div>
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">+100</h3>
-            <p class="profile__info-description">
-              Completed <br /> projects
-            </p>
-          </div>
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">99</h3>
-            <p class="profile__info-description">
-              Satisfied <br /> customers
-            </p>
-          </div>
+        <div class="profile__info">
+          <p class="profile__info-description">
+            I am a self-taught software developer with more than 5 years of experience. I specialize in building exceptional digital experiences.
+          </p>
         </div>
       </div>
 
@@ -75,7 +60,7 @@
           <button class="filters__button" data-target="#skills">Skills</button>
         </div>
         <div class="filters__sections">
-          <div class="projects__content grid" id="projects">
+          <div class="projects__content grid filters__active" data-content id="projects">
             <article class="projects__card">
               <img src="./assets/images/pokemon-rock-paper-scissors.png" alt="" class="projects__img">
               <div class="projects__modal">
@@ -132,15 +117,125 @@
               </div>
             </article>
           </div>
-          <div class="skills__content grid" id="skills">
-
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skills__area">
+              <h3 class="skills__title">
+                Frontend
+              </h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Angular</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">JavaScript</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Cypress</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Jest</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">TypeScript</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">HTML/CSS</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skills__area">
+              <h3 class="skills__title">
+                Backend
+              </h3>
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Java</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Spring Boot</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Cucumber</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">SQL</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">Node</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <div>
+                      <h3 class="skills__name">GWT</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer container">
-
+      <span class="footer__copy">Copyright &copy; 2024 | Danny Yang
+      </span>
     </footer>
 
     <script src="assets/js/main.js"></script>
