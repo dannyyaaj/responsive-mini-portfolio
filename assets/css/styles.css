@@ -160,13 +160,6 @@ img {
   color: var(--accent-color);
 }
 
-.profile__info {
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  column-gap: 2.5rem;
-  text-align: center;
-}
-
 .profile__info-description {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-weight-500);
