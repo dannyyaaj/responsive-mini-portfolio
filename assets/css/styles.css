@@ -75,6 +75,11 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+.main {
+  margin: 3rem 0;
 }
 
 /* reusable css classes */
@@ -105,8 +110,8 @@ img {
 }
 
 .profile__image-container {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   display: flex;
   overflow: hidden;
@@ -119,8 +124,8 @@ img {
 .profile__border {
   border: 3.5px solid var(--accent-color);
   justify-self: center;
-  width: 115px;
-  height: 115px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -288,5 +293,9 @@ img {
 
   .container {
     margin: 0 auto;
+  }
+
+  .projects__content {
+    grid-template-columns: 1fr 1fr;  
   }
 }
