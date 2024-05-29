@@ -219,7 +219,6 @@ img {
   background-color: var(--primary-color);
 }
 
-
 .filters [data-content] {
   display: none;
 }
@@ -314,6 +313,10 @@ img {
   color: var(--secondary-color);
 }
 
+.skills__title {
+  font-weight: bold;
+}
+
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: 500;
@@ -328,15 +331,14 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
+  width: 0.6rem;
+  border-radius: 0.5rem;
   background-color: var(--accent-color);
 }
 
-
 ::-webkit-scrollbar-thumb {
-  width: .6rem;
-  border-radius: .5rem;
+  width: 0.6rem;
+  border-radius: 0.5rem;
   background-color: var(--purple-color);
 }
 
@@ -363,6 +365,6 @@ img {
   }
 
   .projects__content {
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr 1fr;
   }
 }
