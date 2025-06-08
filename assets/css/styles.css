@@ -91,7 +91,6 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
 }
 
 /* profile */
@@ -106,6 +105,7 @@ img {
 
 .profile__data {
   display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
 }
 
@@ -148,6 +148,7 @@ img {
   padding: 0;
   justify-content: center;
   column-gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .profile__social-link {
@@ -227,10 +228,17 @@ img {
   display: grid;
 }
 
+.projects__content {
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .projects__card {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  height: 300px;
+  cursor: pointer;
 }
 
 .projects__card img {
@@ -274,6 +282,7 @@ img {
 
 .projects__button {
   padding: 0.5rem;
+  margin: 0 0.3rem 0 0;
 }
 
 .projects__card:hover .projects__modal {
@@ -348,6 +357,10 @@ img {
   .skills__box {
     flex-direction: column;
   }
+
+  .projects__content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 968px) {
@@ -364,7 +377,11 @@ img {
     margin: 0 auto;
   }
 
+  .profile__info {
+    text-align: center;
+  }
+
   .projects__content {
-    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 }
