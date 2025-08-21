@@ -441,10 +441,6 @@ img {
   margin-bottom: 3rem;
 }
 
-.projects__additional {
-  margin-bottom: 2rem;
-}
-
 .projects__section-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-weight-600);
