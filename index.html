@@ -35,7 +35,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" media="print"
+      onload="this.media='all'" />
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
@@ -84,12 +85,18 @@
 
         <div class="profile__info">
           <p class="profile__value-prop">
-            Passionate creator who transforms ideas into reality through code and innovation.
+            As a full-stack developer, I build production ready web applications that solve real business problems
+          </p>
+          <p class="profile__credibility">
+            5+ years experience • Self-taught developer • Tech entrepreneur
           </p>
           <p class="profile__info-description">
-            Self-taught software developer and tech entrepreneur with 5+ years of experience. I love building
-            things that matter—from production SaaS platforms to interactive games and creative tools.
-            Each project tells a story of curiosity, learning, and the joy of bringing ideas to life.
+            I specialize in Angular and Node.js & Express to create scalable applications from concept to deployment.
+            I've built
+            production SaaS
+            platforms like CurateClip, interactive games, and creative tools that deliver measurable business impact. I
+            focus on
+            clean code, optimal performance, and building things that matter
           </p>
         </div>
       </div>
@@ -102,164 +109,181 @@
     <main class="main" role="main">
       <section class="projects container" id="projects" aria-labelledby="projects-heading">
         <h2 class="section__title" id="projects-heading">Featured Projects</h2>
-        <div class="projects__content grid">
-          <article class="projects__card">
-            <img src="./assets/images/curateclip.png" alt="CurateClip app screenshot" class="projects__img"
-              loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">CurateClip</h3>
-                <div class="projects__description">YouTube clip creation service with authenticated user system, precise
-                  timestamp selection, and automated processing pipeline</div>
-                <div class="projects__tags">
-                  <span class="tag">Angular</span>
-                  <span class="tag">Node</span>
+
+        <div class="projects__featured">
+          <h3 class="projects__section-title">Production Applications</h3>
+          <div class="projects__featured-grid grid">
+            <article class="projects__card projects__card--featured">
+              <img src="./assets/images/curateclip.png" alt="CurateClip app screenshot" class="projects__img"
+                loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__badge">Live Production App</span>
+                  <h3 class="projects__title">CurateClip</h3>
+                  <div class="projects__problem">Problem: Content creators need precise YouTube clip extraction tools
+                  </div>
+                  <div class="projects__description">Full-stack SaaS platform with user authentication, video processing
+                    pipeline, and automated clip generation. Built scalable architecture serving real users.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Node.js & Express</span>
+                    <span class="tag">PostgreSQL</span>
+                  </div>
+                  <a href="https://www.curateclip.net/" class="projects__button button button__small" target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
                 </div>
-                <a href="https://www.curateclip.net/" class="projects__button button button__small" target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/pokemon-rock-paper-scissors-angular.png"
-              alt="Pokemon Rock Paper Scissors game screenshot" class="projects__img" loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Pokemon Rock Paper Scissors</h3>
-                <div class="projects__subtitle">Interactive game with dynamic animations and score tracking</div>
-                <div class="projects__description">Pokémon-themed Rock Paper Scissors featuring first-generation
-                  starters with smooth animations, persistent scoring, and responsive design</div>
-                <div class="projects__tags">
-                  <span class="tag">Angular</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="projects__showcase">
+          <h3 class="projects__section-title">Interactive Demos</h3>
+          <div class="projects__content grid">
+            <article class="projects__card">
+              <img src="./assets/images/pokemon-rock-paper-scissors-angular.png"
+                alt="Pokemon Rock Paper Scissors game screenshot" class="projects__img" loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Pokemon Rock Paper Scissors</h3>
+                  <div class="projects__problem">Problem: Demonstrate Angular animations and state management</div>
+                  <div class="projects__description">Interactive game showcasing advanced Angular features: custom
+                    animations, persistent scoring, and responsive design patterns.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Animations</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/pokemon-rock-paper-scissors-angular"
+                    class="projects__button button button__small" target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/pokemon-rock-paper-scissors-angular"
+                    class="projects__button button button__small" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/pokemon-rock-paper-scissors-angular"
-                  class="projects__button button button__small" target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/pokemon-rock-paper-scissors-angular"
-                  class="projects__button button button__small" target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/wordlez.png" alt="Wordlez game screenshot" class="projects__img" loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Wordlez</h3>
-                <div class="projects__description">Wordle-inspired game featuring custom word lists, streak tracking,
-                  and responsive design for seamless gameplay across devices</div>
-                <div class="projects__tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
+            </article>
+            <article class="projects__card">
+              <img src="./assets/images/wordlez.png" alt="Wordlez game screenshot" class="projects__img" loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Wordlez</h3>
+                  <div class="projects__problem">Problem: Create engaging word puzzle with streak tracking</div>
+                  <div class="projects__description">Wordle-inspired game with custom word lists, persistent statistics,
+                    and mobile-optimized touch interactions.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Vanilla JS</span>
+                    <span class="tag">Game Logic</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/wordlez/" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/wordlez" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/wordlez/" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/wordlez" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/web-dev-quiz.png" alt="Web Dev Quiz app screenshot" class="projects__img"
-              loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Web Dev Quiz</h3>
-                <div class="projects__description">Comprehensive JavaScript knowledge testing platform featuring
-                  progressive difficulty, real-time scoring, and detailed performance analytics</div>
-                <div class="projects__tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
+            </article>
+            <article class="projects__card">
+              <img src="./assets/images/web-dev-quiz.png" alt="Web Dev Quiz app screenshot" class="projects__img"
+                loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Web Dev Quiz</h3>
+                  <div class="projects__problem">Problem: Interactive learning tool for JavaScript concepts</div>
+                  <div class="projects__description">Progressive difficulty quiz platform with real-time scoring,
+                    performance analytics, and adaptive questioning.</div>
+                  <div class="projects__tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Data Structures</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/web-dev-quiz/" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/web-dev-quiz" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/web-dev-quiz/" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/web-dev-quiz" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/quote-generator.png" alt="Quote Generator app screenshot" class="projects__img"
-              loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Quote Generator</h3>
-                <div class="projects__subtitle">A random quote generator app built with Angular 17</div>
-                <div class="projects__tags">
-                  <span class="tag">Angular</span>
-                  <span class="tag">RxJS</span>
+            </article>
+            <article class="projects__card">
+              <img src="./assets/images/quote-generator.png" alt="Quote Generator app screenshot" class="projects__img"
+                loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Quote Generator</h3>
+                  <div class="projects__problem">Problem: Demonstrate Angular and RxJS patterns</div>
+                  <div class="projects__description">Modern Angular application showcasing reactive programming with
+                    RxJS observables and latest framework features.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">RxJS</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/random-quotes/home/"
+                    class="projects__button button button__small" target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/random-quotes" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/random-quotes/home/" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/random-quotes" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/clockly.png" alt="Clockly app screenshot" class="projects__img" loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Clockly</h3>
-                <div class="projects__subtitle">A simple clock application created with html, css, and vanilla
-                  javascript</div>
-                <div class="projects__tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="projects__additional">
+          <h3 class="projects__section-title">Additional Projects</h3>
+          <div class="projects__grid-small grid">
+            <article class="projects__card projects__card--small">
+              <img src="./assets/images/clockly.png" alt="Clockly app screenshot" class="projects__img" loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Clockly</h3>
+                  <div class="projects__description">Clean digital clock with multiple time formats and themes.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Vanilla JS</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/clockly/" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/clockly" class="projects__button button button__small"
+                    target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/clockly/" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/clockly" class="projects__button button button__small"
-                  target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <img src="./assets/images/temperature-converter.png" alt="Temp Sync app screenshot" class="projects__img"
-              loading="lazy">
-            <div class="projects__modal">
-              <div>
-                <h3 class="projects__title">Temp Sync</h3>
-                <div class="projects__subtitle">A temperature converter application built with html, css, and vanilla
-                  javascript</div>
-                <div class="projects__tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
+            </article>
+            <article class="projects__card projects__card--small">
+              <img src="./assets/images/temperature-converter.png" alt="Temp Sync app screenshot" class="projects__img"
+                loading="lazy">
+              <div class="projects__modal">
+                <div>
+                  <h3 class="projects__title">Temp Sync</h3>
+                  <div class="projects__description">Multi-unit temperature converter with real-time calculations.</div>
+                  <div class="projects__tags">
+                    <span class="tag">Vanilla JS</span>
+                  </div>
+                  <a href="https://dannyyaaj.github.io/temperature-converter/"
+                    class="projects__button button button__small" target="_blank">
+                    <i class="ri-external-link-fill"></i>
+                  </a>
+                  <a href="https://github.com/dannyyaaj/temperature-converter"
+                    class="projects__button button button__small" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
                 </div>
-                <a href="https://dannyyaaj.github.io/temperature-converter/"
-                  class="projects__button button button__small" target="_blank">
-                  <i class="ri-external-link-fill"></i>
-                </a>
-                <a href="https://github.com/dannyyaaj/temperature-converter"
-                  class="projects__button button button__small" target="_blank">
-                  <i class="ri-github-line"></i>
-                </a>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -268,109 +292,133 @@
         <div class="skills__content grid">
           <div class="skills__area">
             <h3 class="skills__title">
-              Frontend
+              <i class="ri-code-s-slash-line"></i>
+              Frontend Development
             </h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
                     <h3 class="skills__name">Angular</h3>
+                    <span class="skills__level">5+ years • Built 8+ production apps with NgRx, RxJS, Dependency
+                      Injection</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">JavaScript</h3>
+                    <h3 class="skills__name">JavaScript/TypeScript</h3>
+                    <span class="skills__level">5+ years • ES6+, Async/Await, Promises, Advanced OOP patterns</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Cypress</h3>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">2+ years • Hooks, Context API, Component architecture</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">Jest</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">TypeScript</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
                     <h3 class="skills__name">HTML/CSS</h3>
+                    <span class="skills__level">5+ years • CSS Grid, Flexbox, Animations, Responsive Design</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="skills__area">
             <h3 class="skills__title">
-              Backend
+              <i class="ri-server-line"></i>
+              Backend & Database
             </h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Java</h3>
+                    <h3 class="skills__name">Node.js & Express</h3>
+                    <span class="skills__level">5+ years • Built REST APIs serving 1000+ daily users</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Spring Boot</h3>
+                    <h3 class="skills__name">Java & Spring Boot</h3>
+                    <span class="skills__level">3+ years • Built enterprise microservices for 10K+ users</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Cucumber</h3>
+                    <h3 class="skills__name">PostgreSQL & MongoDB</h3>
+                    <span class="skills__level">4+ years • Database design, optimization, complex queries</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">
+              <i class="ri-tools-line"></i>
+              DevOps & Tools
+            </h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <div>
+                    <h3 class="skills__name">AWS & Azure</h3>
+                    <span class="skills__level">2+ years • EC2, S3, Lambda, App Services, deployment automation</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">SQL</h3>
+                    <h3 class="skills__name">Docker & CI/CD</h3>
+                    <span class="skills__level">3+ years • Containerization, GitHub Actions, automated testing
+                      pipelines</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Node</h3>
+                    <h3 class="skills__name">Git & Development Tools</h3>
+                    <span class="skills__level">5+ years • Webpack, Vite, NPM, advanced Git workflows</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">
+              <i class="ri-shield-check-line"></i>
+              Testing & Quality
+            </h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <div>
+                    <h3 class="skills__name">Automated Testing</h3>
+                    <span class="skills__level">4+ years • Jest, Cypress, Cucumber - 90%+ test coverage
+                      maintained</span>
                   </div>
                 </div>
               </div>
               <div class="skills__group">
                 <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
                   <div>
                     <h3 class="skills__name">GWT</h3>
+                    <span class="skills__level">2+ years • Legacy system maintenance and modernization</span>
                   </div>
                 </div>
               </div>
