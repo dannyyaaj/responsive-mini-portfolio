@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👋 I'm Danny Yang, Software Developer</title>
-    <!-- Favicon -->
+
+    <meta name="description"
+      content="Self-taught software developer with 5+ years of experience specializing in Angular, JavaScript, and full-stack development. View my portfolio and projects.">
+    <meta name="keywords"
+      content="Danny Yang, Software Developer, Angular, JavaScript, TypeScript, Web Development, Full Stack, Portfolio">
+    <meta name="author" content="Danny Yang">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dannyyaaj.github.io/">
+    <meta property="og:title" content="Danny Yang - Software Developer Portfolio">
+    <meta property="og:description"
+      content="Self-taught software developer with 5+ years of experience. Explore my projects and skills in web development.">
+    <meta property="og:image" content="https://dannyyaaj.github.io/assets/images/dy_portrait.jpeg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dannyyaaj.github.io/">
+    <meta property="twitter:title" content="Danny Yang - Software Developer Portfolio">
+    <meta property="twitter:description"
+      content="Self-taught software developer with 5+ years of experience. Explore my projects and skills in web development.">
+    <meta property="twitter:image" content="https://dannyyaaj.github.io/assets/images/dy_portrait.jpeg">
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
@@ -14,12 +35,27 @@
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <body>
-    <header class="profile container">
+    <nav class="navbar" role="navigation">
+      <div class="navbar__container">
+        <a href="#home" class="navbar__logo">
+          <img src="assets/images/DY-logo-48px.svg" alt="Danny Yang Logo" class="navbar__logo-img">
+        </a>
+        <ul class="navbar__menu" role="menubar">
+          <li role="none"><a href="#home" class="navbar__link" role="menuitem">Home</a></li>
+          <li role="none"><a href="#projects" class="navbar__link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#skills" class="navbar__link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="navbar__progress"></div>
+      </div>
+    </nav>
+
+    <header class="profile container" role="banner" id="home">
       <div class="profile__container grid">
         <div class="profile__data">
           <div class="profile__border">
@@ -30,259 +66,333 @@
           <h1 class="profile__intro">Danny Yang</h1>
           <h2 class="profile__profession">Software Developer</h2>
 
-          <ul class="profile__social">
+          <ul class="profile__social" role="list" aria-label="Social media links">
             <li class="profile__social-item">
-              <a href="https://github.com/dannyyaaj" target="_blank" class="profile__social-link">
-                <i class="ri-github-line"></i>
+              <a href="https://github.com/dannyyaaj" target="_blank" class="profile__social-link"
+                aria-label="GitHub Profile">
+                <i class="ri-github-line" aria-hidden="true"></i>
               </a>
             </li>
             <li class="profile__social-item">
-              <a href="https://www.linkedin.com/in/dannytyang" target="_blank" class="profile__social-link">
-                <i class="ri-linkedin-box-line"></i>
+              <a href="https://www.linkedin.com/in/dannytyang" target="_blank" class="profile__social-link"
+                aria-label="LinkedIn Profile">
+                <i class="ri-linkedin-box-line" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
         </div>
 
         <div class="profile__info">
+          <p class="profile__value-prop">
+            Passionate creator who transforms ideas into reality through code and innovation.
+          </p>
           <p class="profile__info-description">
-            I am a self-taught software developer with more than 5 years of experience. I specialize in building
-            exceptional digital experiences.
+            Self-taught software developer and tech entrepreneur with 5+ years of experience. I love building
+            things that matter—from production SaaS platforms to interactive games and creative tools.
+            Each project tells a story of curiosity, learning, and the joy of bringing ideas to life.
           </p>
         </div>
       </div>
-
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="ri-sun-line theme-toggle__light"></i>
+        <i class="ri-moon-line theme-toggle__dark"></i>
+      </button>
     </header>
 
-    <main class="main">
-      <section class="filters container">
-        <div class="filters__content">
-          <button class="filters__button" data-target="#projects">Projects</button>
-          <button class="filters__button" data-target="#skills">Skills</button>
+    <main class="main" role="main">
+      <section class="projects container" id="projects" aria-labelledby="projects-heading">
+        <h2 class="section__title" id="projects-heading">Featured Projects</h2>
+        <div class="projects__content grid">
+          <article class="projects__card">
+            <img src="./assets/images/curateclip.png" alt="CurateClip app screenshot" class="projects__img"
+              loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">CurateClip</h3>
+                <div class="projects__description">YouTube clip creation service with authenticated user system, precise
+                  timestamp selection, and automated processing pipeline</div>
+                <div class="projects__tags">
+                  <span class="tag">Angular</span>
+                  <span class="tag">Node</span>
+                </div>
+                <a href="https://www.curateclip.net/" class="projects__button button button__small" target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/pokemon-rock-paper-scissors-angular.png"
+              alt="Pokemon Rock Paper Scissors game screenshot" class="projects__img" loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Pokemon Rock Paper Scissors</h3>
+                <div class="projects__subtitle">Interactive game with dynamic animations and score tracking</div>
+                <div class="projects__description">Pokémon-themed Rock Paper Scissors featuring first-generation
+                  starters with smooth animations, persistent scoring, and responsive design</div>
+                <div class="projects__tags">
+                  <span class="tag">Angular</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/pokemon-rock-paper-scissors-angular"
+                  class="projects__button button button__small" target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/pokemon-rock-paper-scissors-angular"
+                  class="projects__button button button__small" target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/wordlez.png" alt="Wordlez game screenshot" class="projects__img" loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Wordlez</h3>
+                <div class="projects__description">Wordle-inspired game featuring custom word lists, streak tracking,
+                  and responsive design for seamless gameplay across devices</div>
+                <div class="projects__tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/wordlez/" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/wordlez" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/web-dev-quiz.png" alt="Web Dev Quiz app screenshot" class="projects__img"
+              loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Web Dev Quiz</h3>
+                <div class="projects__description">Comprehensive JavaScript knowledge testing platform featuring
+                  progressive difficulty, real-time scoring, and detailed performance analytics</div>
+                <div class="projects__tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/web-dev-quiz/" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/web-dev-quiz" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/quote-generator.png" alt="Quote Generator app screenshot" class="projects__img"
+              loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Quote Generator</h3>
+                <div class="projects__subtitle">A random quote generator app built with Angular 17</div>
+                <div class="projects__tags">
+                  <span class="tag">Angular</span>
+                  <span class="tag">RxJS</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/random-quotes/home/" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/random-quotes" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/clockly.png" alt="Clockly app screenshot" class="projects__img" loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Clockly</h3>
+                <div class="projects__subtitle">A simple clock application created with html, css, and vanilla
+                  javascript</div>
+                <div class="projects__tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/clockly/" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/clockly" class="projects__button button button__small"
+                  target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="./assets/images/temperature-converter.png" alt="Temp Sync app screenshot" class="projects__img"
+              loading="lazy">
+            <div class="projects__modal">
+              <div>
+                <h3 class="projects__title">Temp Sync</h3>
+                <div class="projects__subtitle">A temperature converter application built with html, css, and vanilla
+                  javascript</div>
+                <div class="projects__tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                </div>
+                <a href="https://dannyyaaj.github.io/temperature-converter/"
+                  class="projects__button button button__small" target="_blank">
+                  <i class="ri-external-link-fill"></i>
+                </a>
+                <a href="https://github.com/dannyyaaj/temperature-converter"
+                  class="projects__button button button__small" target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="filters__sections">
-          <div class="projects__content grid filters__active" data-content id="projects">
-            <article class="projects__card">
-              <img src="./assets/images/pokemon-rock-paper-scissors-angular.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Pokemon Rock Paper Scissors</h3>
-                  <div class="projects__subtitle">A Rock-Paper-Scissors game, themed around
-                    the first-generation starter Pokémon: Bulbasaur,
-                    Charmander, and Squirtle</div>
-                  <a href="https://dannyyaaj.github.io/pokemon-rock-paper-scissors-angular"
-                    class="projects__button button button__small" target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/pokemon-rock-paper-scissors-angular"
-                    class="projects__button button button__small" target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="projects__card">
-              <img src="./assets/images/wordlez.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Wordlez</h3>
-                  <div class="projects__subtitle">A Wordle clone built with HTML, CSS, and Vanilla JavaScript</div>
-                  <a href="https://dannyyaaj.github.io/wordlez/" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/wordlez" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="projects__card">
-              <img src="./assets/images/web-dev-quiz.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Web Dev Quiz</h3>
-                  <div class="projects__subtitle">This interactive quiz app allows users to test their JavaScript skills
-                    across a range of questions, from basic to
-                    advanced concepts.</div>
-                  <a href="https://dannyyaaj.github.io/web-dev-quiz/" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/web-dev-quiz" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="projects__card">
-              <img src="./assets/images/quote-generator.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Quote Generator</h3>
-                  <div class="projects__subtitle">A random quote generator app built with Angular 17</div>
-                  <a href="https://dannyyaaj.github.io/random-quotes/home/"
-                    class="projects__button button button__small" target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/random-quotes" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="projects__card">
-              <img src="./assets/images/clockly.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Clockly</h3>
-                  <div class="projects__subtitle">A simple clock application created with html, css, and vanilla
-                    javascript</div>
-                  <a href="https://dannyyaaj.github.io/clockly/" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/clockly" class="projects__button button button__small"
-                    target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="projects__card">
-              <img src="./assets/images/temperature-converter.png" alt="" class="projects__img">
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Temp Sync</h3>
-                  <div class="projects__subtitle">A temperature converter application built with html, css, and vanilla
-                    javascript</div>
-                  <a href="https://dannyyaaj.github.io/temperature-converter/"
-                    class="projects__button button button__small" target="_blank">
-                    <i class="ri-external-link-fill"></i>
-                  </a>
-                  <a href="https://github.com/dannyyaaj/temperature-converter"
-                    class="projects__button button button__small" target="_blank">
-                    <i class="ri-github-line"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="skills__content grid" data-content id="skills">
-            <div class="skills__area">
-              <h3 class="skills__title">
-                Frontend
-              </h3>
-              <div class="skills__box">
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Angular</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">JavaScript</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Cypress</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Jest</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">TypeScript</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">HTML/CSS</h3>
-                    </div>
+      </section>
+
+      <section class="skills container" id="skills" aria-labelledby="skills-heading">
+        <h2 class="section__title" id="skills-heading">Technical Skills</h2>
+        <div class="skills__content grid">
+          <div class="skills__area">
+            <h3 class="skills__title">
+              Frontend
+            </h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Angular</h3>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="skills__area">
-              <h3 class="skills__title">
-                Backend
-              </h3>
-              <div class="skills__box">
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Java</h3>
-                    </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
                   </div>
                 </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Spring Boot</h3>
-                    </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Cypress</h3>
                   </div>
                 </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Cucumber</h3>
-                    </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Jest</h3>
                   </div>
                 </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">SQL</h3>
-                    </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">TypeScript</h3>
                   </div>
                 </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">Node</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-                    <div>
-                      <h3 class="skills__name">GWT</h3>
-                    </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">HTML/CSS</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="skills__area">
+            <h3 class="skills__title">
+              Backend
+            </h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Java</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Spring Boot</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Cucumber</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">SQL</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Node</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">GWT</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact" aria-labelledby="contact-heading">
+        <h2 class="section__title" id="contact-heading">Let's Connect</h2>
+        <p class="contact__description">
+          I'm always excited to share ideas, discuss technology, or simply connect with fellow creators and innovators.
+        </p>
+        <div class="contact__cta">
+          <a href="mailto:hello@curateclip.net" class="button button--large">
+            <i class="ri-mail-line"></i>
+            Say Hello
+          </a>
+          <a href="https://linkedin.com/in/dannytyang" target="_blank" class="button button--outline button--large">
+            <i class="ri-linkedin-line"></i>
+            Let's Connect
+          </a>
         </div>
       </section>
     </main>
