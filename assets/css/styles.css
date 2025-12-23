@@ -1058,7 +1058,8 @@ img {
   }
 
   .profile {
-    padding-top: calc(var(--space-16) + 72px);
+    padding-top: calc(var(--space-20) + 72px);
+    margin-top: var(--space-4);
   }
 
   .profile__border {
@@ -1102,6 +1103,7 @@ img {
 @media (max-width: 480px) {
   .container {
     padding: 0 var(--space-4);
+    margin-top: var(--space-20);
   }
 
   .navbar__container {
