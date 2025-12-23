@@ -1122,8 +1122,8 @@ img {
     font-size: var(--text-2xl);
   }
 
-  .skills {
-    margin: 0 var(--space-4);
+  .skills .section__title {
+    padding: var(--space-4) 0;
   }
 }
 
