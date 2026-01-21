@@ -498,6 +498,17 @@ img {
   line-height: 1.7;
 }
 
+.profile__link {
+  text-decoration: underline;
+  color: var(--primary-500);
+  font-weight: var(--font-medium);
+  transition: all var(--duration-200) var(--ease-out);
+}
+
+.profile__link:hover {
+  color: var(--primary-600);
+}
+
 /* Buttons */
 .button {
   display: inline-flex;
@@ -781,7 +792,7 @@ img {
   padding: var(--space-20) 0;
   background: linear-gradient(135deg, var(--gray-50), var(--gray-100));
   border-radius: var(--radius-3xl);
-  margin: 0 var(--space-6);
+  margin: 0 auto;
 }
 
 [data-theme="dark"] .skills {
@@ -792,6 +803,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-6);
+  margin: var(--space-6);
 }
 
 .skills__area {
